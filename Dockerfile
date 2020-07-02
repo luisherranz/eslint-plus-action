@@ -13,4 +13,7 @@ FROM node:14
 
 COPY . /action
 
+RUN chown -R node:node /github/workspace
+USER node
+
 ENTRYPOINT ["/action/entrypoint.sh"]
