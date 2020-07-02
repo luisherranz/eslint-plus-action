@@ -21,9 +21,10 @@ set -e
 
 echo "First Install";
 ls -alh
-echo "Install Yarn"
-[ -f yarn.lock ] && yarn install --frozen-lockfile --prefer-offline
-[ -f package-lock.json ] && npm install
+ls -alh node_modules
+" echo "Install Yarn"
+" [ -f yarn.lock ] && yarn install --frozen-lockfile --prefer-offline
+" [ -f package-lock.json ] && npm install
 
 pushd /action
 echo "Yarn Action Install"
