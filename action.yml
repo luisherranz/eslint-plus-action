@@ -54,7 +54,7 @@ inputs:
     description: 'Run with --fix? Defaults to false'
     required: false
   npmInstall:
-    description: 'Run npm install (or yarn) for you. If you don\'t use this option, do the npm install step yourself, before running this action. Defaults to true'
+    description: 'Run npm install (or yarn) for you. If you do not use this option, do the npm install step yourself, before running this action. Defaults to true'
     required: false
     default: true
 runs:
