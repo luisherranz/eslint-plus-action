@@ -13,8 +13,8 @@ FROM node:14
 
 COPY . /action
 
-# RUN mkdir -p /github/workspace && chown -R node:node /github/workspace
-# RUN mkdir -p /action && chown -R node:node /action
-# USER node
+RUN mkdir -p /github/workspace && chown -R node:node /github/workspace
+RUN mkdir -p /action && chown -R node:node /action
+USER node
 
 ENTRYPOINT ["/action/entrypoint.sh"]
